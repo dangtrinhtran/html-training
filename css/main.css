@@ -1,22 +1,274 @@
 
 
 /* ==========================================================================
-   Author's custom styles
+   RESET SETTING
+   ========================================================================== */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+body {
+	font-family: Georgia,helvetica,arial,sans-serif;
+	line-height: 1;
+	color: black;
+	background: white;
+	font-size:62.5%;
+	line-height:1.5;
+	background:url(images/body_bg.jpg);
+}
+ol, ul {
+	list-style: none;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: "";
+}
+blockquote, q {
+	quotes: "" "";
+}
+a {
+	text-decoration:none;
+}
+a img {
+	border: none;	
+}
+
+#page-wrap {
+	width:900px;
+	margin: 0 auto;
+}
+/* ==========================================================================
+   END RESET SETTING
    ========================================================================== */
 
 
+/* ==========================================================================
+                            MAIN HEADER
+   ========================================================================== */
+.clr{
+    clear: both;
+}
+#page-wrap{
+    margin: 0 auto;
+    width: 1000px;
+}
+#header{
+    height: 176px;
+    padding: 60px 0px 0px 10px;
+    background: url(../img/header-bg.jpg) no-repeat top right;     
+}
+#header h1 a{
+    display: block;
+    width: 197px;
+    height: 116px;
+    background: url(../img/logo.png) no-repeat top left;
+    text-indent: -9999999px;
+}
+#top-bar{
+    border-top: 1px dashed #359cc3;
+    border-bottom: 1px dashed #359cc3;
+    padding: 1px 0 0 0;
+}
+#page-info{
+    margin: 25px 0px;
+    overflow: hidden;
+}
+/***** ACCORDION ******/
+.easy-accordion{display:block;position:relative;overflow:hidden;padding:0;margin:0;}
+.easy-accordion dt,.easy-accordion dd{margin:0;padding:0}
+.easy-accordion dt,.easy-accordion dd{position:absolute}
+.easy-accordion dt{margin-bottom:0;margin-left:0;z-index:5;/* Safari */ -webkit-transform: rotate(-90deg); /* Firefox */ -moz-transform: rotate(-90deg);-moz-transform-origin: 20px 0px;  /* Internet Explorer */ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);cursor:pointer;}
+.easy-accordion dd{z-index:1;opacity:0;overflow:hidden}
+.easy-accordion dd.active{opacity:1;}
+.easy-accordion dd.no-more-active{z-index:2;opacity:1}
+.easy-accordion dd.active{z-index:3}
+.easy-accordion dd.plus{z-index:4}
+.easy-accordion .slide-number{position:absolute;bottom:0;left:10px;font-weight:normal;font-size:1.1em;/* Safari */ -webkit-transform: rotate(90deg); /* Firefox */ -moz-transform: rotate(90deg);  /* Internet Explorer */ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);}
+ 
+dd p{line-height:150%}
+
+#accordion{width:750px;height:245px;padding:0px;background:#fff;}
+#accordion dl{width:750px;height:245px}	
+#accordion dt{height:46px;line-height:46px;text-align:right;padding:0 15px 0 0;border-top: 2px solid white;font-size:1.1em;font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;text-transform:uppercase;letter-spacing:1px;background-color: #D7E7EA;color:#26526c}
+#accordion dt.active{cursor:pointer;color:#fff;background:#BCD4DA}
+#accordion dt.hover{color:#fff; background:#BCD4DA}
+#accordion dd{padding:10px;background-color: white;border:1px solid #dbe9ea;border-left:0;margin-right:3px}
+#accordion .slide-number{color:#68889b;left:10px;font-weight:bold}
+#accordion .active .slide-number{color:#fff;}
+#accordion dd img{float:left;margin:10px;}
+#accordion h3 {margin: 0px 0px 0px 148px;}
+#accordion h3 a{font-size:18px;margin-top:0px}
+#accordion h3 a:hover {text-decoration: underline;}
+#accordion .more{padding-top:10px;display:block}
+#accordion a.more:hover {text-decoration: underline;}
+
+/* ==========================================================================
+                        END MAIN HEADER
+   ========================================================================== */
 
 
+/* ==========================================================================
+                         MAIN STRUCTURE
+   ========================================================================== */
+#content-wrap{
+    width: 100%;
+    overflow: hidden;
+    border: 1px solid red;
+}
+#first-sidebar{
+    //width: 200px;
+    border: 1px solid green;
+}
+#main-content{
+   //width: 250px;
+    margin: 0 10px;
+    border: 1px solid green;
+}
+#second-sidebar{
+    //width: 250px;
+    border: 1px solid green;
+}
+/********SIDE BAR*******/
+.widget{
+    margin: 0px 0px 20px 0px;
+}
+.widget p{
+    padding: 0px 3px;
+}
+.widget h4 a{
+    font: bold 12px verdana,sans-serif;
+}
+.widget h2{
+    padding: 3px 0px 3px 10px;
+    color: white;
+    font-size: 16px;
+    background-color: #bcd4da;
+}
+
+.date{
+    text-decoration: underline;
+    color: #898989;
+    text-align: right;
+    font-size: 11px;
+}
+
+/******MAIN CONTENT******/
+#main-content h2{
+    padding: 5px 0px 0px 15px;
+    color: white;
+    font-size: 16px;
+    background: url(../img/cat-bg.png) no-repeat top left;
+    border-bottom: 1px solid #bcd4da;
+}
+#main-content h2 a{
+    color: white;
+}
+.post{position: relative}
+.post h3{
+    margin: 18px 0px;
+    font-size: 18px;
+}
+.post h3 a:hover{
+    text-decoration: underline;
+}
+.post img{
+    margin: 0px 15px;
+}
+.post .meta-data{
+    margin: 15px 0px; 
+    border-top: 1px solid #bcd4da;
+    border-bottom: 1px solid #bcd4da;
+    padding: 5px;
+}
+.more-link{
+    position: absolute;
+    bottom: 7px;
+    right: 0px;
+}
+.post-edit-link{float: right;}
+a.more-link:hover{
+    text-decoration: underline
+}
+.comment-link:hover{
+    text-decoration: underline;
+}
+.comment-link{
+    position: absolute;
+    top : 0px; right: 0px;
+    display: block;
+    width: 43px; height: 36px;
+    padding-top: 5px;
+    font-weight: bold;
+    color: #ce9702;
+    text-align: center;
+    background: url(../img/cmt-bg.png) no-repeat top left;
+}
+.comment-link:hover{color:#c06}
+
+/*****SIDEBAR SECOND******/
+.tab{
+    height: 33px;
+    //border-left: 1px solid #bcd4da;
+}
+.tab_container{
+    border: 1px solid #bcd4da;
+    border-top: none;
+    margin: 0px 0px 20px 0px;
+}
+
+.tab-content{
+    padding: 15px;
+}
 
 
+/*****FOOTER*****/
+#footer{
+    position: relative;
+    border-top: 4px solid #359cc3;
+    height: 120px; line-height: 120px;
+    background: url(../img/footer-bg.jpg) repeat top left;
+    clear: both;
+}
+#footer p{
+    text-align: center;
+    color: #848484;
+    text-transform: uppercase;
+    font-size: 14px;
+}
 
-
-
-
-
-
-
-
-
-
-
+#footer img{
+    position:  absolute;
+    top: 5px;
+    right: 218px;
+}
+/* ==========================================================================
+                        END MAIN STRUCTURE
+   ========================================================================== */
