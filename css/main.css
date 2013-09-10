@@ -143,20 +143,20 @@ dd p{line-height:150%}
 #content-wrap{
     width: 100%;
     overflow: hidden;
-    border: 1px solid red;
+    //border: 1px solid red;
 }
 #first-sidebar{
     //width: 200px;
-    border: 1px solid green;
+    //border: 1px solid green;
 }
 #main-content{
    //width: 250px;
     margin: 0 0px;
-    border: 1px solid green;
+    //border: 1px solid green;
 }
 #second-sidebar{
     //width: 270px;
-   border: 1px solid green;
+  // border: 1px solid green;
 }
 /********SIDE BAR*******/
 .widget{
@@ -263,13 +263,18 @@ a.more-link:hover{
     margin: 0px 0px 20px 0px;
 }
 
-.tab-content{
+.tab_content{
     padding: 15px;
-}
-.tab-content ul li a{
-    font-size: 16px;
+    display: block;
 }
 
+.tab_content ul li a{
+    font-size: 16px;
+}
+#postdautien
+{
+    display: block;
+}
 
 /*****FOOTER*****/
 #footer{
