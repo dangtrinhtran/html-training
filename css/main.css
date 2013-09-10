@@ -26,6 +26,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 :focus {
 	outline: 0;
 }
+.group{display: inline-block; clear: both;}
 body {
 	font-family: Georgia,helvetica,arial,sans-serif;
 	line-height: 1;
@@ -78,7 +79,7 @@ a img {
 }
 #page-wrap{
     margin: 0 auto;
-    width: 1000px;
+    width: 1350px;
 }
 #header{
     height: 176px;
@@ -100,6 +101,7 @@ a img {
 #page-info{
     margin: 25px 0px;
     overflow: hidden;
+    
 }
 /***** ACCORDION ******/
 .easy-accordion{display:block;position:relative;overflow:hidden;padding:0;margin:0;}
@@ -149,12 +151,12 @@ dd p{line-height:150%}
 }
 #main-content{
    //width: 250px;
-    margin: 0 10px;
+    margin: 0 0px;
     border: 1px solid green;
 }
 #second-sidebar{
-    //width: 250px;
-    border: 1px solid green;
+    //width: 270px;
+   border: 1px solid green;
 }
 /********SIDE BAR*******/
 .widget{
@@ -162,17 +164,27 @@ dd p{line-height:150%}
 }
 .widget p{
     padding: 0px 3px;
+    font-size:large;
 }
 .widget h4 a{
-    font: bold 12px verdana,sans-serif;
+    font: bold 18px verdana,sans-serif;    
+}
+.widget h4{
+    margin: 6px 0px;
 }
 .widget h2{
     padding: 3px 0px 3px 10px;
     color: white;
-    font-size: 16px;
+    font-size: 20px;
     background-color: #bcd4da;
 }
-
+.widget ul li{
+    margin-bottom: 2px;
+    border-bottom: 1px dotted #bcd4da;
+}
+.widget ul li a{
+    font-size: 16px;
+}
 .date{
     text-decoration: underline;
     color: #898989;
@@ -184,7 +196,7 @@ dd p{line-height:150%}
 #main-content h2{
     padding: 5px 0px 0px 15px;
     color: white;
-    font-size: 16px;
+    font-size: 20px;
     background: url(../img/cat-bg.png) no-repeat top left;
     border-bottom: 1px solid #bcd4da;
 }
@@ -208,6 +220,10 @@ dd p{line-height:150%}
     border-bottom: 1px solid #bcd4da;
     padding: 5px;
 }
+.col-md-9 p{
+    font-size:large;
+}
+
 .more-link{
     position: absolute;
     bottom: 7px;
@@ -238,6 +254,9 @@ a.more-link:hover{
     height: 33px;
     //border-left: 1px solid #bcd4da;
 }
+.tab li a{
+    font-size: 20px;
+}
 .tab_container{
     border: 1px solid #bcd4da;
     border-top: none;
@@ -246,6 +265,9 @@ a.more-link:hover{
 
 .tab-content{
     padding: 15px;
+}
+.tab-content ul li a{
+    font-size: 16px;
 }
 
 
