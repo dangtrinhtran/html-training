@@ -99,10 +99,23 @@ a img {
     text-indent: -9999999px;
 }
 #top-bar{
-    border-top: 1px dashed #359cc3;
-    border-bottom: 1px dashed #359cc3;
+    border-top: 1px solid #359cc3;
+    border-bottom: 1px solid #359cc3;
     padding: 1px 0 0 0;
+    width: 100%;
 }
+.nav li a{
+    padding: 0px 10px;
+    font-size: 16px;
+    color: #545454;
+    border-right: 1px solid white;
+    border-left: 1px solid white;  
+}
+.nav li a:hover{
+    color: white;
+    background-color: #bcd4da;    
+}
+
 #main{
     margin: 25px 0px;
     overflow: hidden;    
@@ -149,13 +162,20 @@ dd p{line-height:150%}
     overflow: hidden;
     //border: 1px solid red;
 }
-#first-sidebar{
+#first-sidebar .nav li a{
     //width: 200px;
     //border: 1px solid green;
+    color: #666;
+    padding : 0px 0px 5px 0px;
+    border-bottom: 1px dotted #bcd4da;
+}
+#first-sidebar .nav li a:hover{
+    color: #ce9702;
+    background-color: white;
 }
 #main-content{
    //width: 250px;
-    margin: 0 0px;
+    margin: 0px 0px;
     //border: 1px solid green;
 }
 #second-sidebar{
@@ -168,10 +188,16 @@ dd p{line-height:150%}
 }
 .widget p{
     padding: 0px 3px;
-    font-size:large;
+    font-size:16px;
+    color: rgb(102, 102, 102);
 }
 .widget h4 a{
-    font: bold 18px verdana,sans-serif;    
+    font: bold 12px verdana,sans-serif;  
+    color: #ce9702;
+}
+.widget h4 a:hover{
+    color: #bcd4da;
+    text-decoration: none;
 }
 .widget h4{
     margin: 6px 0px;
@@ -184,10 +210,10 @@ dd p{line-height:150%}
 }
 .widget ul li{
     margin-bottom: 2px;
-    border-bottom: 1px dotted #bcd4da;
+   // border-bottom: 1px dotted #bcd4da;
 }
 .widget ul li a{
-    font-size: 16px;
+   // font-size: 16px;
 }
 .date{
     text-decoration: underline;
@@ -212,11 +238,12 @@ dd p{line-height:150%}
     margin: 18px 0px;
     font-size: 18px;
 }
+.post h3 a{
+    color: #ce9702;
+}
 .post h3 a:hover{
     text-decoration: underline;
-}
-.post img{
-    margin: 0px 15px;
+    color: #bcd4da;
 }
 .post .meta-data{
     margin: 15px 0px; 
@@ -225,7 +252,8 @@ dd p{line-height:150%}
     padding: 5px;
 }
 .col-md-9 p{
-    font-size:large;
+    font-size:16px;
+    color: rgb(102, 102, 102);
 }
 
 .more-link{
@@ -273,7 +301,14 @@ a.more-link:hover{
 }
 
 .tab_content ul li a{
-    font-size: 16px;
+    font: 16px verdana,sans-serif;
+    color: #666;
+    padding : 0px 0px 5px 0px;
+    border-bottom: 1px dotted #bcd4da;
+}
+.tab_content ul li a:hover{
+    color: #ce9702;
+    background-color: white;
 }
 #postdautien
 {
