@@ -77,10 +77,15 @@ a img {
 .clr{
     clear: both;
 }
-#page-wrap{
+/*#page-wrap{
     margin: 0 auto;
-    width: 1350px;
+    width: 1020px;
+}*/
+#container .container{
+     margin: 0 auto;
+     max-width: 1280px;
 }
+
 #header{
     height: 176px;
     padding: 60px 0px 0px 10px;
@@ -98,10 +103,9 @@ a img {
     border-bottom: 1px dashed #359cc3;
     padding: 1px 0 0 0;
 }
-#page-info{
+#main{
     margin: 25px 0px;
-    overflow: hidden;
-    
+    overflow: hidden;    
 }
 /***** ACCORDION ******/
 .easy-accordion{display:block;position:relative;overflow:hidden;padding:0;margin:0;}
@@ -277,13 +281,16 @@ a.more-link:hover{
 }
 
 /*****FOOTER*****/
+#container footer{
+    background: url(../img/footer-bg.jpg) repeat top left;
+}
 #footer{
     position: relative;
     border-top: 4px solid #359cc3;
     height: 120px; line-height: 120px;
-    background: url(../img/footer-bg.jpg) repeat top left;
     clear: both;
 }
+
 #footer p{
     text-align: center;
     color: #848484;
