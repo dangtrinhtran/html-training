@@ -106,10 +106,11 @@ a img {
 }
 .nav li a{
     padding: 0px 10px;
-    font-size: 16px;
-    color: #545454;
+    font-size: small;
+    color: rgb(102, 102, 102); 
     border-right: 1px solid white;
     border-left: 1px solid white;  
+    border-radius: 0px;
 }
 .nav li a:hover{
     color: white;
@@ -168,6 +169,7 @@ dd p{line-height:150%}
     color: #666;
     padding : 0px 0px 5px 0px;
     border-bottom: 1px dotted #bcd4da;
+    font-size: initial;
 }
 #first-sidebar .nav li a:hover{
     color: #ce9702;
@@ -207,6 +209,7 @@ dd p{line-height:150%}
     color: white;
     font-size: 20px;
     background-color: #bcd4da;
+    margin: 0px 0px 5px 0px;
 }
 .widget ul li{
     margin-bottom: 2px;
