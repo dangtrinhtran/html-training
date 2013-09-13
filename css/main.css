@@ -28,13 +28,12 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 }
 .group{display: inline-block; clear: both;}
 body {
-	font-family: Georgia,helvetica,arial,sans-serif;
+	font-family: Arial,helvetica,Georgia,sans-serif;
 	line-height: 1;
 	color: black;
 	background: white;
 	font-size:62.5%;
 	line-height:1.5;
-	background:url(images/body_bg.jpg);
 }
 ol, ul {
 	list-style: none;
@@ -83,7 +82,7 @@ a img {
 }*/
 #container .container{
      margin: 0 auto;
-     max-width: 1280px;
+     max-width: 1050px;
 }
 
 #header{
@@ -95,8 +94,6 @@ a img {
     display: block;
     width: 197px;
     height: 116px;
-    background: url(../img/logo.png) no-repeat top left;
-    text-indent: -9999999px;
 }
 #top-bar{
     border-top: 1px solid #359cc3;
@@ -105,8 +102,8 @@ a img {
     width: 100%;
 }
 .nav li a{
-    padding: 0px 10px;
-    font-size: small;
+    padding: 5px 10px;
+    font-size: 14pt;
     color: rgb(102, 102, 102); 
     border-right: 1px solid white;
     border-left: 1px solid white;  
@@ -167,9 +164,8 @@ dd p{line-height:150%}
     //width: 200px;
     //border: 1px solid green;
     color: #666;
-    padding : 0px 0px 5px 0px;
-    border-bottom: 1px dotted #bcd4da;
-    font-size: initial;
+    padding : 0px 0px 5px 7px;
+    font-size: 12pt;
 }
 #first-sidebar .nav li a:hover{
     color: #ce9702;
@@ -190,13 +186,23 @@ dd p{line-height:150%}
     border: 1px solid #bcd4da;
 }
 .widget p{
-    padding: 0px 3px;
-    font-size:16px;
+    padding: 5px;
+    margin:5px; 
+    font-size:12pt;
     color: rgb(102, 102, 102);
 }
 .widget h4 a{
-    font: bold 12px verdana,sans-serif;  
+    font: bold 13pt Arial;  
     color: #ce9702;
+    padding: 5px;
+    margin: 5px;
+}
+#second-sidebar .widget h4 a{
+    font: bold 13pt Arial;  
+    color: #810304;
+}
+#second-sidebar .widget p{
+    border-bottom: 1px solid #dfdfdf;
 }
 .widget h4 a:hover{
     color: #bcd4da;
@@ -208,7 +214,7 @@ dd p{line-height:150%}
 .widget h2{
     padding: 3px 0px 3px 10px;
     color: white;
-    font-size: 20px;
+    font-size: 16pt;
     background-color: #bcd4da;
     margin: 0px 0px 5px 0px;
 }
@@ -223,14 +229,14 @@ dd p{line-height:150%}
     text-decoration: underline;
     color: #898989;
     text-align: right;
-    font-size: 11px;
+    font-size: 11pt;
 }
 
 /******MAIN CONTENT******/
 #main-content h2{
     padding: 5px 0px 0px 15px;
     color: white;
-    font-size: 20px;
+    font-size: 16pt;
     background: url(../img/cat-bg.png) no-repeat top left;
     border-bottom: 1px solid #bcd4da;
 }
@@ -240,7 +246,7 @@ dd p{line-height:150%}
 .post{position: relative}
 .post h3{
     margin: 18px 0px;
-    font-size: 18px;
+    font-size: 18pt;
 }
 .post h3 a{
     color: #ce9702;
@@ -257,9 +263,11 @@ dd p{line-height:150%}
     border-top: 1px solid #bcd4da;
     border-bottom: 1px solid #bcd4da;
     padding: 5px;
+    font-size: 11pt;
 }
+
 .col-md-9 p{
-    font-size:16px;
+    font-size:12pt;
     color: rgb(102, 102, 102);
 }
 
@@ -267,6 +275,7 @@ dd p{line-height:150%}
     position: absolute;
     bottom: 7px;
     right: 0px;
+    font-size: 11pt;
 }
 .post-edit-link{float: right;}
 a.more-link:hover{
@@ -280,11 +289,12 @@ a.more-link:hover{
     top : 0px; right: 0px;
     display: block;
     width: 43px; height: 36px;
-    padding-top: 10px;
+    padding-top: 3px;
     font-weight: bold;
     color: #ce9702;
     text-align: center;
     background: url(../img/cmt-bg.png) no-repeat top left;
+    font-size: 14pt;
 }
 .comment-link:hover{color:#c06}
 
@@ -308,7 +318,7 @@ a.more-link:hover{
     background-color: #d7e7ea;
 }
 .tab li a{
-    font-size: 20px;
+    font-size: 12pt;
     color: white;
     display: block;
     padding: 0 5px;
@@ -338,8 +348,11 @@ a.more-link:hover{
     border-bottom: 1px dotted #bcd4da;
     padding: 7px 0px;
 }
+.tab_content ul li:last-child{
+    border-bottom: none;
+}
 .tab_content ul li a{
-    font: 16px verdana,sans-serif;
+    font: 12pt Arial,sans-serif;
     color: #666;
     padding : 0px 0px 5px 0px;
 }
