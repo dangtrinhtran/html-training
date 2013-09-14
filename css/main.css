@@ -204,7 +204,7 @@ dd p{line-height:150%}
 #second-sidebar .widget p{
     border-bottom: 1px solid #dfdfdf;
 }
-.widget h4 a:hover{
+.widget h4 a,#second-sidebar .widget h4 a:hover{
     color: #bcd4da;
     text-decoration: none;
 }
@@ -252,7 +252,7 @@ dd p{line-height:150%}
     color: #ce9702;
 }
 .post a img{
-    margin: 0px 0px 0px 45px;
+    margin: 20px;
 }
 .post h3 a:hover{
     text-decoration: underline;
@@ -299,64 +299,64 @@ a.more-link:hover{
 .comment-link:hover{color:#c06}
 
 /*****SIDEBAR SECOND******/
-.tab{
+#second-sidebar .nav{
     height: 33px;
     border: 1px solid #bcd4da;
 }
-.tab li{
-    float: left;
-    border: 1px solid #bcd4da;
+#second-sidebar .nav li{
     line-height: 31px;
-    border-left: none;
     background-color: #bcd4da;
-    border: 1px solid white;
 }
-.tab li:hover{
+#second-sidebar li:hover{
     background-color: #d7e7ea;
 }
-.tab li:focus{
+#second-sidebar .nav li:focus{
     background-color: #d7e7ea;
 }
-.tab li a{
-    font-size: 12pt;
+#second-sidebar .widget li:hover{
+    background: none;
+}
+#second-sidebar .nav li a{
+    font-size: 16pt;
     color: white;
-    display: block;
-    padding: 0 5px;
+    border: none;
     
 }
-.tab li a:active{
+#second-sidebar .nav li a:hover{
+    background-color: #d7e7ea;
+}
+#second-sidebar .nav li a:active{
     background-color: #d7e7ea;
     text-decoration: none;
     color: #31576e;
 }
-.tab li a:focus{
+#second-sidebar .nav li a:focus{
     text-decoration: none;
     color: #31576e;
 }
-.tab_container{
+#second-sidebar .tab-content{
     border: 1px solid #bcd4da;
     border-top: none;
     margin: 0px 0px 20px 0px;
-    
+    padding: 15px;
 }
 
-.tab_content{
-    padding: 15px;
-    display: block;
-}
-.tab_content ul li{
+#second-sidebar .tab-content ul li{
     border-bottom: 1px dotted #bcd4da;
     padding: 7px 0px;
 }
-.tab_content ul li:last-child{
+#second-sidebar .tab-content ul li:hover{
+    background: none;
+}
+#second-sidebar .tab-content ul li:last-child{
     border-bottom: none;
 }
-.tab_content ul li a{
+#second-sidebar .tab-content ul li a{
     font: 12pt Arial,sans-serif;
     color: #666;
     padding : 0px 0px 5px 0px;
 }
-.tab_content ul li a:hover{
+#second-sidebar .tab-content ul li a:hover{
     color: #ce9702;
     text-decoration: none;
     background-color: white;
